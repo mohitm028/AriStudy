@@ -1,5 +1,6 @@
 body{
     background-color: rgb(144, 195, 230); 
+    display: flex;
 }
 .container{
     display: flex;
@@ -33,6 +34,7 @@ img{
     flex-direction :column;
     color:rgb(79, 123, 128);
     background-color: rgb(219, 253, 253);
+    padding: 6px 27px;
     
 }
 
@@ -52,6 +54,7 @@ h2{
 .interest{
     display:flex;
     flex-direction:column;
+    margin-top:13px;
 
 }
 h1{
@@ -67,13 +70,41 @@ h1{
 
  .pad20l{
     padding-left:10px;
-    position: relative;
+    
+    
     
  }
 
+ .index-box{
+    padding-left:10px;
+    position: relative;
+    padding-bottom: 15px;
+
+ }
+
+ .index-box small{
+    color: #e74c3c;
+    position : absolute;
+    top : 60px;
+    left: 11px;
+    visibility:hidden;
+ }
+
+ .index-box.error input{
+    border-color: #e74c3c;
+}
+
+.index-box.error small{
+    visibility: visible;
+}
+
+.index-box.success input{
+    border-color: #0cc84d;
+}
+
  .icon{
     position:absolute;
-    bottom: 5px;
+    bottom: 22px;
     left: 218px;
  }
 
@@ -95,15 +126,47 @@ h1{
  }
 
  .form-container{
-    padding-left:30px;
+    padding-left:7px;
  }
 
  .box{
     width: 225px;
-    height:27px;
+    height:26px;
     margin-top:10px;
  }
 
 .register-box{
     height:18px;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 47px;
+    position: relative;
+    
+}
+
+.register-box small{
+    color: #e74c3c;
+    position : absolute;
+    top : 45px;
+    left: 0px;
+    visibility:hidden;
+}
+.register-box label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-box.error input{
+    border-color: #e74c3c;
+}
+
+.register-box.error small{
+    visibility: visible;
+}
+.register-box.success input{
+    border-color: #0cc84d;
+}
+
+.radio{
+    margin-top: 18px;
 }

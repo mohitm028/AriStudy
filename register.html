@@ -16,84 +16,58 @@
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex nisi eveniet, qui fugit in ipsa nemo hic, aut sit velit officia beatae, obcaecati quod doloribus ab totam molestiae nam tenetur dolorem tempore a perspiciatis debitis aliquam blanditiis. Facere neque veniam quis. Ad at cumque aut, officiis nesciunt perspiciatis neque illum consequuntur? Sapiente odio tempora deleniti quos necessitatibus obcaecati odit natus eos itaque accusamus, alias vitae consectetur repudiandae, id est optio quam ratione repellendus laboriosam? Iste quae nostrum tempora, perferendis nesciunt animi laboriosam ullam maiores error. Doloribus quis voluptas reprehenderit odio, iusto itaque, error at molestiae sequi fugit earum sed asperiores perspiciatis veniam. Ad maiores iure cupiditate quasi eligendi at quam aliquam enim pariatur similique inventore tenetur laudantium, fuga dicta suscipit saepe deleniti, sequi, tempora obcaecati dignissimos deserunt quod voluptatem. Fugiat impedit porro ratione, repellendus sunt quasi pariatur sit quia architecto veniam, unde et consequuntur! Velit molestiae corrupti natus fugiat totam accusantium minima eligendi repellendus odit aliquid? Error temporibus sequi reiciendis eligendi fugiat aperiam ipsam nesciunt dolorum labore aliquid, enim, quidem facilis? Vel asperiores magnam autem aspernatur excepturi, quae sapiente id laudantium.</p>
             </div>
         </div>   
-        <div class="form">
+        <div>
             <h2>REGISTRATION FORM</h2>
-        <br>
-        <br>
-           <div class="form-container"> 
-            <form>
-                <div>
-                    <label for="fname">
-                        User Name:
-                        <input type="text" name="fname" id="fname" placeholder="Enter user name " style="margin-left:4px" class="register-box">
-                        <br>
-                        <br>
-                    </label>
-                </div>
 
-                <div>
-                    <label for="email">
-                        Email:
-                        <input type="email" name="email" id="email" placeholder="Enter your email " style="margin-left:34px" class="register-box">
-                    </label>
-                    <br>
-                    <br>
+            <form id = "form" class="form">
+                <div class="register-box"> 
+                    <label for="username"  >
+                        User Name:</label>
+                        <input type="text" name="uname" id="username" placeholder="Enter user name ">
+                    
+                        <small>Error Message</small>
                 </div>
-                <div>
-                    <label for="pw">
-                        Password:
-                        <input type="password" name="pw" id="pw" placeholder="Enter password " style="margin-left:11px" class="register-box">
-                    </label>
-                    <br>
-                    <br>
-                </div>
-                <div>
-                    <label for="pw">
-                        Confirm:
-                        <input type="password" name="cpw" id="cpw" placeholder="Confirm password " style="margin-left:18px" class="register-box">
-                    </label>
-                    <br>
-                    <br>
+    
+                <div class="register-box">
+                    <label for="email" >
+                        Email: </label>
+                        <input type="text" name="email" id="email" placeholder="Enter your email " >
+                   
+                    <small>Error Message</small>
                 </div>
             
-                <div>
-                    <label for="male">
-                        <input type="radio" name="gender" id="male">Male
-                    </label>
-                    <label for="female">
-                        <input type="radio" name="gender" id="female">Female
-                    </label>
-                    <br><br>
-        
+                <div class="register-box">
+                    <label for="password">
+                        Password:</label>
+                        <input type="password" name="pw" id="password" placeholder="Enter password " >
+                    
+                    <small>Error Message</small>
                 </div>
-        
-                <div class="interest">
-                    Interest:
-                    <label for="frontend">
-                        <input type="checkbox" name="frontend" id="frontend">Frontend
-                    </label>
-                    <label for="backend">
-                        <input type="checkbox" name="backend" id="backend">Backend
-                    </label>
-                    <label for="data">
-                        <input type="checkbox" name="data" id="data">Data
-                    </label>
-                    <br>
+            
+                <div class="register-box">
+                    <label for="confirm-password">
+                        Confirm:</label>
+                        <input type="password" name="cpw" id="confirm-password" placeholder="Confirm password ">
+                    
+                    <small>Error Message</small>
+                    
                 </div>
+            
+            
+        
+                <br>
                 <div>
                    
-                    <button class="submit">
-                        <a href="index.html" class="ref">
-                            Submit
-                        </a>
+                    <button class="submit" type="submit" id="button">
+                        Submit
                     </button>
                     
                 </div>
                 
         
             </form>
-        </div>
     </div>
     </div>
+<script src="script.js"></script>    
 </body>
 </html>

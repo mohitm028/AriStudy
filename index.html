@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     
@@ -22,37 +22,37 @@
             <div class="form">
                 <h2>USER LOGIN FORM</h2>
             <br>
-            <br>
-               <div class="form-container">
-                <form >
-                    <div class="pad20l">
-                        <label for="fname" style="margin-bottom:20px;">
+               <div class="form-container" id="login">
+                <form id = "login-form">
+                    <div class="index-box">
+                        <label for="username">
                             User Name:<br>
-                            <input type="text" name="fname" id="fname" placeholder="Enter user name " class="box">
+                        </label>
+                            <input type="text" name="fname" id="username" placeholder="Enter user name " class="box">
                             <div class="icon">
                                 <iconify-icon icon="bi:people-fill"></iconify-icon>
                             </div>
-                            
-                        </label>
-                    </div>
-                    <div class="pad20l"> 
-                        <br>
-                        <label for="pw">
-                        Password:<br>
-                        <input type="password" name= "pw" id="pw" placeholder="Enter your password" class="box">
-                        <div class="icon">
-                            <iconify-icon icon="mdi:password"></iconify-icon>
-                        </div>
+                            <small>Error Message</small>
                         
-                    </label>
+                        
+                    </div>
+                    <div class="index-box"> 
+        
+                        <label for="password">
+                        Password:<br>
+                        </label>
+                        <input type="password" name= "pw" id="password" placeholder="Enter your password" class="box">
+                        <div class="icon">
+                            <i class="far fa-eye" id="togglePassword"></i>
+                        </div>
+                        <small>Error Message</small>
+                   
                     </div>
                     
                     <br>
                     <div class="pad20l">
-                        <button class="submit"  >
-                            <a href="welcome.html" class="ref">
+                        <button class="submit" type="submit" >
                                 Log In
-                            </a>
                     </div>
                     
                     </button>
@@ -69,6 +69,6 @@
                
             </div>
          </div>
-<script src="test.js"></script>
+<script src="login.js"></script>
 </body>
 </html>
