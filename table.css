@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(144, 195, 230);
+  display: flex;
+}
+h3 {
+  color: rgb(79, 123, 128);
+}
+.cent {
+  padding-left: 25%;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+th {
+  text-align: center;
+  padding: 13px;
+  color: white;
+}
+.table-container {
+  display: flex;
+}
+img {
+  width: 25%;
+  height: 25%;
+}

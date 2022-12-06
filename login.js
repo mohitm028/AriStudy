@@ -20,10 +20,10 @@ form.addEventListener("submit", (e) => {
     showError(password, "Password is empty");
   } else {
     if (
-      username.value === "aricalot@gmail.com" ||
+      username.value === "aricalot@gmail.com" &&
       password.value === "Test@123"
     ) {
-      location.replace("welcome.html");
+      location.replace("table.html");
     } else {
       alert("Invalid Credentials");
     }
